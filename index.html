@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon_astec&#9789;</title>
+    <link rel="shortcut icon" type="image/jpg" href="photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        ::-moz-selection {
+            /* Code for Firefox */
+            color: azure;
+            background: darkgray;
+        }
+
+        ::selection {
+            color: azure;
+            background: darkgray;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: lowercase;
+        }
+
+        body {
+            background-color: azure;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .mygtukas {
+            width: 200px;
+            height: 50px;
+            background-color: lightgray;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .6s;
+            margin: 30px auto;
+        }
+
+        .mygtukas:hover {
+            background-color: darkgray;
+            transform: scale(1.1);
+        }
+
+        .pozicija {
+            width: 40%;
+            height: auto;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        p {
+            width: 100%;
+            height: 100%;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin: 30px auto;
+        }
+
+        #screen {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: azure;
+            top: 0;
+            z-index: 100;
+            transition: 0.3s;
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(-360deg);
+            }
+            100%{
+                
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .pozicija {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+    <div id="screen">
+        <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+        <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
+    </div>
+    <h1>Moon_astec&#9789;</h1>
+    <h1 style="font-size: 20px;">LT: <span style="color: red;">Automatinis kalbos aptikimas neveikia. Prašome pasirinkti kalbą rankiniu būdu.</span></h1>
+    <h1 style="font-size: 20px;">EN: <span style="color: red;">Automatic language detection is not working. Please select your language manually.</span></h1>
+    <div class="pozicija">
+        <div class="mygtukas"><a href="matthewmatexas.github.io/moon_astec/lt/pagrindinis">
+                <p>Lietuviškai</p>
+            </a></div>
+        <div class="mygtukas"><a href="matthewmatexas.github.io/moon_astec/en/main">
+                <p>in English</p>
+            </a></div>
+    </div>
+    <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(() => {
+            document.title = 'moon_astec☽ redirection error';
+        }, 22000);
+        setTimeout(() => {    document.getElementById("screen").style.transform = "scale(5.0)"; }, 20000);
+            setTimeout(() => {    document.getElementById("screen").style.opacity = "0"; }, 20100);
+            setTimeout(() => {    document.getElementById("screen").style.zIndex = "-1"; }, 20200);
+        document.title = 'moon_astec☽ loading.';
+        setTimeout(() => {
+            document.title = 'moon_astec☽ loading..';
+        }, 500);
+        setTimeout(() => {
+            document.title = 'moon_astec☽ loading...';
+        }, 1000);
+        setTimeout(() => {
+            document.title = 'moon_astec☽ loading.';
+        }, 1500);
+        setTimeout(() => {
+            document.title = 'moon_astec☽ loading..';
+        }, 2000);
+        setTimeout(() => {
+            document.title = 'moon_astec☽ loading...';
+        }, 2500);
+        setTimeout(() => {
+            var userLang = navigator.language || navigator.userLanguage;
+        if (userLang == 'lt-LT') {
+            window.location.href = "https://matthewmatexas.github.io/moon_astec/lt/pagrindinis";
+        } else if (userLang == 'lt') {
+            window.location.href = "https://matthewmatexas.github.io/moon_astec/lt/pagrindinis";
+        } else {
+            window.location.href = "https://matthewmatexas.github.io/moon_astec/en/main";
+        }
+        }, 3000);
+    </script>
+</body>
+</html>
